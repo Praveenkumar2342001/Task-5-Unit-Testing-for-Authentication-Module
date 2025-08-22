@@ -29,7 +29,6 @@ export default function Login() {
       aria-label="login-form"   
       onSubmit={handleSubmit}
     >
-      <h1>Login</h1>
       <div>
         <label htmlFor="email">Email</label>  
         <input
