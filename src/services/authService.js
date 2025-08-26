@@ -3,8 +3,9 @@ export async function login({ email, password }) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (email === "user@example.com" && password === "password123") {
+         reject({message:"login successful"});
         resolve({ token: "mock-jwt" });
-      } else {
+      } else { 
         reject({ message: "Invalid credentials" });
       }
     }, 200);
